@@ -13,18 +13,45 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 // ACCESS THE VARIABLES CREATED IN 'questions' IN 'index.js'
 function generateMarkdown(data) {
-    return `# ${data.title}
+    return `# ${data.projectTitle}
 
-    List of bages if you need it: https://naereen.github.io/badges/
-    making a good readme: https://www.makeareadme.com/
-    ${data.license ? data.license : ""}
+${data.projectDescription}
 
-## Description
-${data.description}
+## Installation
+
+${data.projectInstallation}
+
+## Usage
+
+${data.projectInstructions}
+
+## Credits
+
+${data.projectCollaborators} 
+// INSERT ANY OTHER COLLABORATORS (if not, just yourself)
+
+## License
+
+List of bages if you need it: https://naereen.github.io/badges/
+making a good readme: https://www.makeareadme.com/
+${data.license ? data.license : ""}
 
 
+
+
+
+## IF YOU HAVE TIME:
+## Badges
+## Features
+## How to Contribute
+## Tests
 
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {
+    renderLicenseBadge,
+    renderLicenseLink,
+    renderLicenseSection,
+    generateMarkdown,
+};
