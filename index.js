@@ -25,22 +25,22 @@ const questions = [
     },
     {
         // licensing of project
-        type: "checkbox",
+        type: "rawlist",
         message: "What kind of license is your project?",
         name: "projectLicense",
         choices: [
             // find common licensing later
             {
                 name: "MIT",
-                value: "[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)",
+                value: "[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://choosealicense.com/licenses/mit/#)",
             },
             {
-                name: "JavaScript",
-                value: "[![JavaScript](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=000)](https://www.javascript.com/)",
+                name: "Apache",
+                value: "[![Apache license](https://img.shields.io/badge/License-Apache-red.svg)](https://choosealicense.com/licenses/apache-2.0/)",
             },
             {
-                name: "Jupyter",
-                value: "[![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)",
+                name: "GMU",
+                value: "[![GMU license](https://img.shields.io/badge/License-GMU-green.svg)](https://choosealicense.com/licenses/agpl-3.0/)",
             },
             { name: "None", value: false },
         ],
@@ -68,7 +68,28 @@ const questions = [
         // Installation
         type: "input",
         message: "List any collaborators that helped with this project:",
+        // How would you like people to contribute to your open source project:
         name: "projectCollaborators",
+    },
+    {
+        // licensing of project
+        type: "checkbox",
+        message: "What kind of license is your project?",
+        name: "projectBadges",
+        choices: [
+            // find common licensing later
+            {
+                name: "JavaScript",
+                value: "![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)",
+            },
+            {
+                name: "Julia",
+                value: "![Julia](https://img.shields.io/badge/-Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white)",
+            },
+            // ADD MORE LATER
+            { name: "None", value: false },
+        ],
+        default: "None",
     },
     // variables:
     // DONE project title: What is the title of your project?

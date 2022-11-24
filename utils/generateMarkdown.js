@@ -1,6 +1,12 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderExtraBadges(badges) {
+    var allExtraBadges = "";
+    for (var i = 0; i < badges.length; i++) {
+        allExtraBadges += " " + badges[i];
+    }
+    return allExtraBadges;
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -15,6 +21,15 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
     return `# ${data.projectTitle}
 
+${data.projectLicense ? data.projectLicense : ""}
+
+// REFER TO THIS FOR FORMATTING: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+## Table of contents
+// INSERT
+
+## Description
+
 ${data.projectDescription}
 
 ## Installation
@@ -25,33 +40,33 @@ ${data.projectInstallation}
 
 ${data.projectInstructions}
 
-## Credits
+## Contributions
 
 ${data.projectCollaborators} 
-// INSERT ANY OTHER COLLABORATORS (if not, just yourself)
+
+## Tests
+
+// INSERT TEST VARIABLE
+
 
 ## License
 
-List of bages if you need it: https://naereen.github.io/badges/
-making a good readme: https://www.makeareadme.com/
-${data.license ? data.license : ""}
+This project uses the ${data.projectLicense ? data.projectLicense : ""}.
 
+## Badges
 
-
-
+${renderExtraBadges(data.projectBadges)}
 
 ## IF YOU HAVE TIME:
-## Badges
+
+    ## ask for additional badges
 ## Features
-## How to Contribute
-## Tests
+
+
 
 `;
 }
 
 module.exports = {
-    renderLicenseBadge,
-    renderLicenseLink,
-    renderLicenseSection,
     generateMarkdown,
 };

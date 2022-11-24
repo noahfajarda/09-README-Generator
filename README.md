@@ -1,20 +1,22 @@
-# Project 1
+# project 1
 
-## Description
+[![MIT license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/#)
+[![GMU license](https://img.shields.io/badge/License-GMU-green.svg)](https://choosealicense.com/licenses/agpl-3.0/)
 
-This is the best project
+Test
+https://choosealicense.com/licenses/mit/#
 
 ## Installation
 
-3 Steps
+something
 
 ## Usage
 
-No instruct
+eef
 
 ## Credits
 
-only me
+we
 // INSERT ANY OTHER COLLABORATORS (if not, just yourself)
 
 ## License
