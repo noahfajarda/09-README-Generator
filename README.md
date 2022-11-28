@@ -8,33 +8,8 @@ This project is an attempt to create a program, with the help of the external 'I
 
 ## Screenshot
 
-![App Screenshot](https://github.com/noahfajarda/03-JavaScript-Password-Generator/blob/main/Assets/Screen%20Shot%202022-10-14%20at%2010.59.41%20PM.png)
-![App Screenshot](https://github.com/noahfajarda/03-JavaScript-Password-Generator/blob/main/Assets/Screen%20Shot%202022-10-14%20at%2011.00.22%20PM.png)
-
-ADDITIONAL INFORMATION:
-ADDITIONAL INFORMATION:
-ADDITIONAL INFORMATION:
-ADDITIONAL INFORMATION:
-ADDITIONAL INFORMATION:
-Readme necessary components:
----what the app is for
----how to use the app
----how to install it
----how to report issues
----how to make contributions
-
-Create the readme in the CMD terminal
-
-Create an application that 'dynamically generates a professional README.md file
-Resources:
-[Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4)
-[Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
-
-will be called with:
-
-```
-node index.js
-```
+![App Screenshot](https://github.com/noahfajarda/09-README-Generator/blob/main/Assets/Screenshot1.png)
+![App Screenshot](https://github.com/noahfajarda/09-README-Generator/blob/main/Assets/Screenshot2.png)
 
 need to create a video that demonstrates functionality
 Submission:
