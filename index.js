@@ -3,12 +3,6 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 // access external functions from 'generateMarkdown.js' file
 const generateMarkdown = require("./utils/generateMarkdown");
-// generateMarkdown.renderLicenseBadge
-// generateMarkdown.renderLicenseLink
-// generateMarkdown.renderLicenseSection
-// generateMarkdown.generateMarkdown
-
-// TODO: Create an array of questions for user input
 
 const questions = [
     {
@@ -59,22 +53,37 @@ const questions = [
         name: "projectInstallation",
     },
     {
-        // Installation
+        // Usage
         type: "input",
-        message: "Provide Instructions for using your application.",
-        name: "projectInstructions",
+        message: "Provide instructions for using your application:",
+        name: "projectUsage",
     },
     {
-        // Installation
+        // Support
         type: "input",
-        message: "List any collaborators that helped with this project:",
+        message: "Where can people go to for help with the application?",
+        name: "projectSupport",
+    },
+    {
+        // Contributions
+        type: "input",
+        message:
+            "State if you are open to contributions and what your requirements are for accepting them:",
         // How would you like people to contribute to your open source project:
-        name: "projectCollaborators",
+        name: "projectContributions",
+    },
+    {
+        // Authors & Acknowledgement
+        type: "input",
+        message:
+            "Show appreciation to those who have contributed to the project:",
+        name: "projectAcknowledgement",
     },
     {
         // licensing of project
         type: "checkbox",
-        message: "What kind of license is your project?",
+        message:
+            "Which of these additional licenses are used within your project?",
         name: "projectBadges",
         choices: [
             // find common licensing later
@@ -83,21 +92,39 @@ const questions = [
                 value: "![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)",
             },
             {
+                name: "Python",
+                value: "[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)",
+            },
+            {
                 name: "Julia",
                 value: "![Julia](https://img.shields.io/badge/-Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white)",
             },
-            // ADD MORE LATER
+            {
+                name: "TypeScript",
+                value: "![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)",
+            },
             { name: "None", value: false },
         ],
         default: "None",
     },
-    // variables:
-    // DONE project title: What is the title of your project?
-    // License: What kind of license is your project?
-    // DONEdescription: Provide a short description of your project.
-    // DONEInstallation: What are the steps required to install your project?
-    // DONEUsage: Provide Instructions for using your application.
-    // DONECredits: List any collaborators that helped with this project.
+    {
+        // Additional Info
+        type: "input",
+        message: "Please insert additional information?",
+        name: "projectAdditionalInfo",
+    },
+    {
+        // Github
+        type: "input",
+        message: "Enter your github username:",
+        name: "githubUsername",
+    },
+    {
+        // Email
+        type: "input",
+        message: "Enter your email address:",
+        name: "email",
+    },
 ];
 
 // TODO: Create a function to write README file

@@ -21,12 +21,19 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
     return `# ${data.projectTitle}
 
+## License(s):
 ${data.projectLicense ? data.projectLicense : ""}
+${renderExtraBadges(data.projectBadges)}
 
-// REFER TO THIS FOR FORMATTING: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-
-## Table of contents
-// INSERT
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Support](#support)
+- [Contributions](#contributions)
+- [Authors & Acknowledgement](#authors-&-acknowledgement)
+- [Additional Info](#additional-information)
+- [Contact Information](#contact-information)
 
 ## Description
 
@@ -38,31 +45,27 @@ ${data.projectInstallation}
 
 ## Usage
 
-${data.projectInstructions}
+${data.projectUsage}
+
+## Support
+
+${data.projectSupport}
 
 ## Contributions
 
-${data.projectCollaborators} 
+${data.projectContributions} 
 
-## Tests
+## Authors & Acknowledgement
 
-// INSERT TEST VARIABLE
+${data.projectAcknowledgement} 
 
+## Additional Information
 
-## License
+${data.projectAdditionalInfo} 
 
-This project uses the ${data.projectLicense ? data.projectLicense : ""}.
-
-## Badges
-
-${renderExtraBadges(data.projectBadges)}
-
-## IF YOU HAVE TIME:
-
-    ## ask for additional badges
-## Features
-
-
+## Contact Information:
+- Github: [${data.githubUsername}](https://github.com/${data.githubUsername})
+- Email: [${data.email}](mailto:${data.email})
 
 `;
 }

@@ -1,35 +1,45 @@
-# project 1
+# 09-README-Generator
 
-[![MIT license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/#)
-[![GMU license](https://img.shields.io/badge/License-GMU-green.svg)](https://choosealicense.com/licenses/agpl-3.0/)
+## Description
 
-Test
-https://choosealicense.com/licenses/mit/#
+This project is an attempt to create a program, with the help of the external 'Inquirer' package, that will generate a custom README.md file based on a user's preferences. These preferences include a project's description, usage, contributions, and more. This application consists of various questions with different input types depending on the question, such as text input or multiple choice input. After a user has answered these questions, the data is stored in an object that is, then, extracted to generate the README.md file using the external 'generateMarkdown.js' file. This external file returns a template to retrieve and write information to the eventual README.md file. The README.md file will then be created and can be accessed in the current directory.
 
-## Installation
+## Screenshot
 
-something
+![App Screenshot](https://github.com/noahfajarda/03-JavaScript-Password-Generator/blob/main/Assets/Screen%20Shot%202022-10-14%20at%2010.59.41%20PM.png)
+![App Screenshot](https://github.com/noahfajarda/03-JavaScript-Password-Generator/blob/main/Assets/Screen%20Shot%202022-10-14%20at%2011.00.22%20PM.png)
 
-## Usage
+## Link to Deployed Application
 
-eef
+https://noahfajarda.github.io/09-README-Generator/
 
-## Credits
+ADDITIONAL INFORMATION:
+ADDITIONAL INFORMATION:
+ADDITIONAL INFORMATION:
+ADDITIONAL INFORMATION:
+ADDITIONAL INFORMATION:
+Readme necessary components:
+---what the app is for
+---how to use the app
+---how to install it
+---how to report issues
+---how to make contributions
 
-we
-// INSERT ANY OTHER COLLABORATORS (if not, just yourself)
+Create the readme in the CMD terminal
 
-## License
+Create an application that 'dynamically generates a professional README.md file
+Resources:
+[Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4)
+[Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 
-List of bages if you need it: https://naereen.github.io/badges/
-making a good readme: https://www.makeareadme.com/
+will be called with:
 
-## IF YOU HAVE TIME:
+```
+node index.js
+```
 
-## Badges
-
-## Features
-
-## How to Contribute
-
-## Tests
+need to create a video that demonstrates functionality
+Submission:
+---link to video
+---link to repo of HW
+---include link to video to readme as well
