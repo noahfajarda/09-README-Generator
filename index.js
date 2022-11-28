@@ -110,7 +110,7 @@ const questions = [
     {
         // Additional Info
         type: "input",
-        message: "Please insert additional information?",
+        message: "Please insert additional information:",
         name: "projectAdditionalInfo",
     },
     {
@@ -143,7 +143,7 @@ function init() {
             // create a file
             const md = generateMarkdown.generateMarkdown(response);
             // // write to that file
-            writeToFile(`${response.fileName}`, md);
+            writeToFile(`./generated-readme/${response.fileName}`, md);
         });
 }
 
