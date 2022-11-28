@@ -1,8 +1,8 @@
-# Sample Project 1
+# Project 1
 
 ## License(s):
-[![Apache license](https://img.shields.io/badge/License-Apache-red.svg)](https://choosealicense.com/licenses/apache-2.0/)
- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) ![Julia](https://img.shields.io/badge/-Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white)
+[![GMU license](https://img.shields.io/badge/License-GMU-green.svg)](https://choosealicense.com/licenses/agpl-3.0/)
+ ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) ![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)
 
 ## Table of Contents
 - [Description](#description)
@@ -16,33 +16,33 @@
 
 ## Description
 
-This is a sample description for this project.
+This is the description for Project 1
 
 ## Installation
 
-Please install this program:
+These are the steps to install this application.
 
 ## Usage
 
-You can use our applications by following a set of instructions
+These are the instructions.
 
 ## Support
 
-to this application
+Users can reach out to the developer for application help.
 
 ## Contributions
 
-We are open to contributions 
+Our team is open to contributions & there are some requirements for acceptance. 
 
 ## Authors & Acknowledgement
 
-We appreciate those who worked on this 
+Thank you to those who have contributed to this project. 
 
 ## Additional Information
 
-aeiefl 
+ 
 
 ## Contact Information:
-- Github: [test](https://github.com/test)
-- Email: [test](mailto:test)
+- Github: [githubUser](https://github.com/githubUser)
+- Email: [studentEmail@gmail.com](mailto:studentEmail@gmail.com)
 
