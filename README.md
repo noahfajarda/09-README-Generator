@@ -10,9 +10,3 @@ This project is an attempt to create a program, with the help of the external 'I
 
 ![App Screenshot](https://github.com/noahfajarda/09-README-Generator/blob/main/Assets/Screenshot1.png)
 ![App Screenshot](https://github.com/noahfajarda/09-README-Generator/blob/main/Assets/Screenshot2.png)
-
-need to create a video that demonstrates functionality
-Submission:
----link to video
----link to repo of HW
----include link to video to readme as well
